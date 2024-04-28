@@ -12,26 +12,26 @@ void handleRoot() {
 
 void setup() {
   pinMode(2, OUTPUT);
-  digitalWrite(2, HIGH);   // Turn the LED on
-  delay(100);              // Wait for 100 milliseconds
-  digitalWrite(2, LOW);    // Turn the LED off
+  digitalWrite(2, HIGH);  // Turn the LED on
+  delay(100);             // Wait for 100 milliseconds
+  digitalWrite(2, LOW);   // Turn the LED off
   delay(1000);
   Serial.begin(115200);
-  
+
   // Connect to Wi-Fi
   WiFi.begin(ssid, password);
-  digitalWrite(2, HIGH);   // Turn the LED on
-  delay(100);              // Wait for 100 milliseconds
-  digitalWrite(2, LOW);    // Turn the LED off
+  digitalWrite(2, HIGH);  // Turn the LED on
+  delay(100);             // Wait for 100 milliseconds
+  digitalWrite(2, LOW);   // Turn the LED off
   delay(1000);
   while (WiFi.status() != WL_CONNECTED) {
     delay(1000);
     Serial.println("Connecting to WiFi...");
   }
   Serial.println("Connected to WiFi");
-  digitalWrite(2, HIGH);   // Turn the LED on
-  delay(100);              // Wait for 100 milliseconds
-  digitalWrite(2, LOW);    // Turn the LED off
+  digitalWrite(2, HIGH);  // Turn the LED on
+  delay(100);             // Wait for 100 milliseconds
+  digitalWrite(2, LOW);   // Turn the LED off
   delay(1000);
 
   // Print ESP32 IP address
@@ -49,11 +49,11 @@ void setup() {
   delay(100);
   digitalWrite(2, LOW);
   delay(100);
-  digitalWrite(2, HIGH);   
+  digitalWrite(2, HIGH);
   delay(100);
   digitalWrite(2, LOW);
   delay(100);
-  digitalWrite(2, HIGH); 
+  digitalWrite(2, HIGH);
 }
 
 void loop() {
