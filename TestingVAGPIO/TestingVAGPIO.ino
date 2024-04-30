@@ -1,4 +1,4 @@
-const int pin = 16; // Select PIN
+const int pin = 2; // Select PIN
 const bool analogTesting = true; // Set Mode (Analog | Digital)
 const int analogDelay = 50; // Set Analog Delay During Fade
 const int digitalDelay = 2000; // Set Digital Delay Between On/Off
