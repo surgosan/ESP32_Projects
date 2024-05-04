@@ -25,8 +25,8 @@ void loop() {
 
   if (strobeRunning) {
     digitalWrite(2, HIGH);   // Turn the LED on
-    delay(100);              // Wait for 100 milliseconds
+    delay(5000);              // Wait for 100 milliseconds
     digitalWrite(2, LOW);    // Turn the LED off
-    delay(100);              // Wait for 100 milliseconds
+    delay(5000);              // Wait for 100 milliseconds
   }
 }

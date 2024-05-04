@@ -1,4 +1,4 @@
-const int fsrPin = 13; // GPIO pin connected to the FSR
+const int fsrPin = 4; // GPIO pin connected to the FSR
 
 void setup() {
   pinMode(2, OUTPUT);
@@ -13,5 +13,5 @@ void loop() {
   // Print the analog value to the serial monitor
   Serial.println(fsrValue);
 
-  delay(100); // Delay for stability
+  delay(500); // Delay for stability
 }
