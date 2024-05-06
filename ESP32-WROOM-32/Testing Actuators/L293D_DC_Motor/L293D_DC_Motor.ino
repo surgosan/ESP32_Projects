@@ -1,5 +1,5 @@
-const int in1Pin = 2; // Replace with your PWM-capable GPIO pin number
-const int in2Pin = 4; // Replace with your GPIO pin number
+const int in1Pin = 6; // Replace with your PWM-capable GPIO pin number
+const int in2Pin = 7; // Replace with your GPIO pin number
 
 void setup() {
   // Set GPIO pins as outputs

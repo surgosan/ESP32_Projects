@@ -32,7 +32,8 @@ void setup() {
   server.on("/message", HTTP_POST, handleMessage);
   server.begin();
   Serial.println("HTTP server started");
-  Serial.println("IP Address: " + WiFi.localIP());
+  Serial.print("IP Address: ");
+  Serial.println(WiFi.localIP());
 }
 
 void loop() {
