@@ -14,7 +14,7 @@ void startSensor() {
 }
 
 void setup() {
-  Serial.begin(9600);
+  Serial.begin(115200);
   delay(1000);
   Serial.println("Starting");
   Serial.println("VEML7700 test");
@@ -42,6 +42,13 @@ void loop() {
     // Print lux value to serial monitor
     Serial.print("Lux: ");
     Serial.println(lux);
+
+    float white = veml.readWhite();
+    Serial.print("White: ");
+    Serial.println(white);
+
+    Serial.println();
+    Serial.println();
 
     // Wait for a short delay before reading again
     delay(2000);

@@ -1,12 +1,30 @@
 #include <Wire.h>
+#include "driver/i2c.h"
 /* 
-PIN SETUP (ESP to BME):
-ESP32 3.3V (3V3) -> BME688 VIN
-ESP32 GND -> BME688 GND
-ESP32 D22 (SCL) -> BME688 SCK
-ESP32 D21 (SDA) -> BME688 SDI
+Setup I2C Master Pins
 */
+
+#define I2C_MASTER_SCL_IO           2                 // GPIO number for I2C SCL pin
+#define I2C_MASTER_SDA_IO           3                 // GPIO number for I2C SDA pin
+#define I2C_MASTER_NUM              I2C_NUM_0         // I2C port number
+#define I2C_MASTER_FREQ_HZ          100000          // I2C master clock frequency
+
+void i2c_master_init() {
+    i2c_config_t conf;
+    conf.mode = I2C_MODE_MASTER;
+    conf.sda_io_num = I2C_MASTER_SDA_IO;
+    conf.sda_pullup_en = GPIO_PULLUP_ENABLE;
+    conf.scl_io_num = I2C_MASTER_SCL_IO;
+    conf.scl_pullup_en = GPIO_PULLUP_ENABLE;
+    conf.master.clk_speed = I2C_MASTER_FREQ_HZ;
+
+    i2c_param_config(I2C_MASTER_NUM, &conf);
+    i2c_driver_install(I2C_MASTER_NUM, conf.mode, 0, 0, 0);
+}
+
+
 void setup() {
+  i2c_master_init();
   Wire.begin();
 
   Serial.begin(115200);
