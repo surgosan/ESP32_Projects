@@ -16,31 +16,34 @@ void setup() {
 void loop() {
   // Read joystick switch state
   int sw_state = analogRead(JOYSTICK_SW_PIN);
-  if(sw_state > 0) {
-    sw_state = 1;
+  if(sw_state > 5) {
+    sw_state = 0;
+  } else {
+      sw_state = 1;
   }
 
   // Read joystick X and Y axes values
   int vrx_value = analogRead(JOYSTICK_VRX_PIN);
   vrx_value += 40;
-  vrx_value = map(vrx_value, 0, 4095, 100, 0);
-  if(vrx_value == 49 || vrx_value == 51) {
-    vrx_value = 50;
+  vrx_value = map(vrx_value, 0, 4095, 101, -99);
+  if(vrx_value > -3 && vrx_value < 3) {
+    vrx_value = 0;
   }
   int vry_value = analogRead(JOYSTICK_VRY_PIN);
-  vry_value = map(vry_value, 0, 4095, 0, 100);
-  if(vry_value == 49 || vry_value == 51) {
-    vry_value = 50;
+  vry_value = map(vry_value, 0, 4095, -100, 100);
+  if(vry_value > -3 && vry_value < 3) {
+    vry_value = 0;
   }
 
   // Print values to serial console
   // Switch, X, Y
-  Serial.print(sw_state);
-  Serial.print(", ");
-  Serial.print(vrx_value);
-  Serial.print(", ");
-  Serial.println(vry_value);
-  Serial.println("");
+  // Serial.print(sw_state);
+  // Serial.print(", ");
+  // Serial.print(vrx_value);
+  // Serial.print(", ");
+  // Serial.println(vry_value);
+  // Serial.println("");
+  Serial.printf("Switch: %d  |  X: %d  |  Y: %d \n\n", sw_state, vrx_value, vry_value);
   
 
   // Add delay if needed
