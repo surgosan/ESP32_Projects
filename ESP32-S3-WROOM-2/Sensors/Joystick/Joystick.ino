@@ -34,15 +34,6 @@ void loop() {
   if(vry_value > -3 && vry_value < 3) {
     vry_value = 0;
   }
-
-  // Print values to serial console
-  // Switch, X, Y
-  // Serial.print(sw_state);
-  // Serial.print(", ");
-  // Serial.print(vrx_value);
-  // Serial.print(", ");
-  // Serial.println(vry_value);
-  // Serial.println("");
   Serial.printf("Switch: %d  |  X: %d  |  Y: %d \n\n", sw_state, vrx_value, vry_value);
   
 
