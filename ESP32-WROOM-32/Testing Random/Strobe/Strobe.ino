@@ -2,7 +2,7 @@ bool strobeRunning = true; // Variable to track whether strobe is running or sto
 
 void setup() {
   pinMode(2, OUTPUT); // Set the built-in LED pin as output
-  Serial.begin(9600); // Start serial communication at 9600 baud
+  Serial.begin(115200); // Start serial communication at 9600 baud
   delay(100);
   Serial.println("Started Strobe");
 }

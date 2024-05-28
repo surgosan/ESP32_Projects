@@ -1,0 +1,8 @@
+Generic ESP32-WROOM-32
+  IPv4: 192.168.1.32  |  Mac Address: C8:2E:18:26:98:84
+  IPv4: 192.168.1.60  |  Mac Address: C8:2E:18:26:B8:D0
+  IPv4: 192.168.1.61  |  Mac Address: C8:2E:18:26:96:08
+
+Expressif ESP32-S3-WROOM-2
+  IPv4: 192.168.1.64
+
