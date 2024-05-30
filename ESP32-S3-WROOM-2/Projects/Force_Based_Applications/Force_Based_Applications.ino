@@ -1,10 +1,10 @@
-#define fsrPin 4
+#define fsrPin 1
 #define transistorPIN 5
 
 void setup() {
   pinMode(fsrPin, INPUT);
   pinMode(transistorPIN, OUTPUT);
-  digitalWrite(transistorPIN, LOW);
+  digital(transistorPIN, LOW);
   Serial.begin(115200);
 }
 
