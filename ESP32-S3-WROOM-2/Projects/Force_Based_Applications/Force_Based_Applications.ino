@@ -4,13 +4,13 @@
 void setup() {
   pinMode(fsrPin, INPUT);
   pinMode(transistorPIN, OUTPUT);
-  digital(transistorPIN, LOW);
+  digitalWrite(transistorPIN, LOW);
   Serial.begin(115200);
 }
 
 void loop() {
   int fsrValue = analogRead(fsrPin);
-  if(fsrValue > 4000) {
+  if(fsrValue < 3500) {
     digitalWrite(transistorPIN, HIGH);
   } else {
     digitalWrite(transistorPIN, LOW);
