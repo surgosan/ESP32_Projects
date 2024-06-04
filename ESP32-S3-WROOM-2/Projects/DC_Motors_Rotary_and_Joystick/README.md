@@ -7,7 +7,7 @@ This project details how I used my ESP32 to control two DC motors with a potenti
 This project familiarizes with electrical components such as wiring and power supplies, 
 PWM, and the Arduino IDE. 
 
-This setup can be applied to robotics and anything would need to move along 2d plane. 
+This setup can be applied to robotics and anything that would need to move along 2d plane. 
 
 ![Overview](media/IMG_3474.jpg)
 
