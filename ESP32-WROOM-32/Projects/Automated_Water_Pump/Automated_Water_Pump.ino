@@ -6,42 +6,38 @@ const char* password = "Rosselin06";
 
 WebServer server(80);
 
-String message = "No message yet.";
+bool fountainStatus = false;
+String fountainStatusString = "Fountain OFF";
 
 void handleRoot() {
   String html = R"(
-    <h1>ESP32 Web Server</h1>
-    <p id='message'>Your message: )" + message + R"(</p>
-    <input type='text' id='msg' onkeypress='if(event.keyCode===13) sendMessage()'>
-    <button onclick='sendMessage()'>Send</button>
+    <h1>Yammie's Fountain</h1>
+    <p id='message'>Fountain Status: )" + fountainStatusString + R"(</p>
+    <button onclick='toggleFountain()'>Toggle Fountain</button>
     <script>
-      function sendMessage(){
-        let msg = document.getElementById('msg').value;
-        document.getElementById('message').innerHTML = 'Waiting for response...';
-        let xhr = new XMLHttpRequest();
-        xhr.open('POST', '/message', true);
+      function toggleFountain() {
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST', '/toggle', true);
         xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-        xhr.send('msg=' + msg);
-        xhr.onload = function(){
-          if(xhr.status == 200){
-            document.getElementById('message').innerHTML = 'Your message: ' + msg;
+        xhr.send();
+        xhr.onload = function() {
+          if (xhr.status == 200) {
+            document.getElementById('message').innerHTML = 'Fountain Status: ' + xhr.responseText;
           } else {
-            document.getElementById('message').innerHTML = 'Failed to send message';
+            document.getElementById('message').innerHTML = 'Failed to toggle fountain';
           }
         }
       }
     </script>
   )";
-  
+
   server.send(200, "text/html", html);
 }
 
-
-void handleMessage() {
-  if (server.hasArg("msg")) {
-    message = server.arg("msg");
-  }
-  server.send(200, "text/plain", "Message received");
+void toggleFountain() {
+  fountainStatus = !fountainStatus;
+  fountainStatusString = fountainStatus ? "Fountain ON" : "Fountain OFF";
+  server.send(200, "text/plain", fountainStatusString);
 }
 
 void setup() {
@@ -54,7 +50,7 @@ void setup() {
   Serial.println("Connected to WiFi");
 
   server.on("/", handleRoot);
-  server.on("/message", HTTP_POST, handleMessage);
+  server.on("/toggle", HTTP_POST, toggleFountain);
   server.begin();
   Serial.println("HTTP server started");
   Serial.print("IP Address: ");
@@ -63,4 +59,6 @@ void setup() {
 
 void loop() {
   server.handleClient();
+
+  
 }
