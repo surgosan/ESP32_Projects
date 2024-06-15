@@ -1,6 +1,7 @@
 #include <WiFi.h>
 #include <WebServer.h>
 
+#define transistorPIN 2
 const char* ssid = "NETGEAR17";
 const char* password = "Rosselin06";
 
@@ -41,6 +42,9 @@ void toggleFountain() {
 }
 
 void setup() {
+  pinMode(transistorPIN, OUTPUT);
+  digitalWrite(transistorPIN, LOW);
+
   Serial.begin(115200);
   WiFi.begin(ssid, password);
   while (WiFi.status() != WL_CONNECTED) {
@@ -60,5 +64,9 @@ void setup() {
 void loop() {
   server.handleClient();
 
-  
+  if(fountainStatus) {
+    digitalWrite(transistorPIN, HIGH);
+  } else {
+    digitalWrite(transistorPIN, LOW);
+  }
 }
