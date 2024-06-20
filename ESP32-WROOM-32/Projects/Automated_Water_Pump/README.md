@@ -19,4 +19,9 @@ is asleep. I also want to be able to control it from my phone, so I can turn it 
 - Screw Terminal Blocks
 - Barrel Power Adapter
 - Motor Controller (L293D)
-- 
+
+## Process
+
+I started by creating a prototype of the device. I used a full sized breadboard to house everything,
+but I will be reducing it to half a breadboard. This allowed me to more easily test the circuits to 
+ensure that the project works as intended.
