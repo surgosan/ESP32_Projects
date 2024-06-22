@@ -1,0 +1,8 @@
+//
+// Created by sergy on 6/21/2024.
+//
+
+#ifndef ESP32_S3_CLION_ESPNOW_SLAVE_H
+#define ESP32_S3_CLION_ESPNOW_SLAVE_H
+
+#endif //ESP32_S3_CLION_ESPNOW_SLAVE_H

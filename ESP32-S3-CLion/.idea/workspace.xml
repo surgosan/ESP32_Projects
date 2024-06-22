@@ -3,9 +3,9 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
-  <component name="CMakePresetLoader"><![CDATA[{
-  "useNewFormat": true
-}]]></component>
+  <component name="CMakePresetLoader">{
+  &quot;useNewFormat&quot;: true
+}</component>
   <component name="CMakeReloadState">
     <option name="reloaded" value="true" />
   </component>
@@ -139,7 +139,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef0279b1-0681-4159-a665-9d79ed38e1ed" name="Changes" comment="Added CLion ESP IDF Support">
+    <list default="true" id="ef0279b1-0681-4159-a665-9d79ed38e1ed" name="Changes" comment="Updated Gitignore for idf files">
       <change afterPath="$PROJECT_DIR$/../../../../../Espressif/frameworks/esp-idf-v5.2.1/workspace/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../../../../Espressif/frameworks/esp-idf-v5.2.1/workspace/Testing/.cproject" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../../../../Espressif/frameworks/esp-idf-v5.2.1/workspace/Testing/.project" afterDir="false" />
@@ -158,7 +158,17 @@
       <change afterPath="$PROJECT_DIR$/../../../../../Espressif/frameworks/esp-idf-v5.2.1/workspace/test/main/CMakeLists.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../../../../Espressif/frameworks/esp-idf-v5.2.1/workspace/test/main/Kconfig.projbuild" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../../../../Espressif/frameworks/esp-idf-v5.2.1/workspace/test/main/main.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/ESPNOW/ESPNOW_Master.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/ESPNOW/ESPNOW_Master.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/ESPNOW/ESPNOW_Slave.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/ESPNOW/ESPNOW_Slave.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/ESPNOW/MacAdress.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/ESPNOW/MacAdress.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Onboard_LED.c" beforeDir="false" afterPath="$PROJECT_DIR$/components/Onboard_LED.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/ESP32-S3-CLion.c" beforeDir="false" afterPath="$PROJECT_DIR$/main/ESP32-S3-CLion.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,50 +187,53 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "surgosan"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;surgosan&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/surgosan/ESP32_Projects.git",
-    "accountId": "ade4a553-c62b-42c4-917c-0dd1622da0ff"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/surgosan/ESP32_Projects.git&quot;,
+    &quot;accountId&quot;: &quot;ade4a553-c62b-42c4-917c-0dd1622da0ff&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectApplicationVersion">
     <option name="ide" value="CLion" />
     <option name="majorVersion" value="2024" />
     <option name="minorVersion" value="1.4" />
     <option name="productBranch" value="Classic" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2iB7pYZZxDGfFZGygudAr3nmAhL" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/sergy/CLionProjects/ESP32_Projects/ESP32-S3-CLion/main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "CMakeSettings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/sergy/CLionProjects/ESP32_Projects/ESP32-S3-CLion/main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;CMakeSettings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\sergy\CLionProjects\ESP32_Projects\ESP32-S3-CLion\main" />
@@ -931,6 +944,7 @@
       <option name="presentableId" value="Default" />
       <updated>1718952300486</updated>
       <workItem from="1718952302485" duration="639000" />
+      <workItem from="1719008425571" duration="4284000" />
     </task>
     <task id="LOCAL-00001" summary="Added CLion ESP IDF Support">
       <option name="closed" value="true" />

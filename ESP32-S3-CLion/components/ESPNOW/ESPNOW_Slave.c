@@ -2,6 +2,8 @@
 // Created by sergy on 6/21/2024.
 //
 
+#include "ESPNOW_Slave.h"
+#include <stdio.h>
 #include <stdio.h>
 #include <string.h>
 #include "freertos/FreeRTOS.h"
