@@ -9,8 +9,8 @@ This project familiarizes with electrical components such as wiring and power su
 This setup is applicable to situations where placing an object in a particular place causes a reaction.
 
 <div style="display: flex;">
-    <img src="media/1.jpg" style="width: 50%;" alt="Image 1">
-    <img src="media/2.jpg" style="width: 50%;" alt="Image 2">
+    <img src="https://raw.githubusercontent.com/surgosan/ESP32_Projects/main/ESP32-S3-WROOM-2/Projects/Force_Based_Applications/media/1.jpg" style="width: 50%;" alt="Image 1">
+    <img src="https://raw.githubusercontent.com/surgosan/ESP32_Projects/main/ESP32-S3-WROOM-2/Projects/Force_Based_Applications/media/2.jpg" style="width: 50%;" alt="Image 2">
 </div>
 
 *Forced based application using a simple LED*
@@ -47,8 +47,8 @@ Utilizing this setup allows the ESP32 to control components that would require m
 ESP32 can output.
 
 <div style="display: flex;">
-    <img src="media/3.jpg" style="width: 50%;" alt="Image 1">
-    <img src="media/4.jpg" style="width: 50%;" alt="Image 2">
+    <img src="https://raw.githubusercontent.com/surgosan/ESP32_Projects/main/ESP32-S3-WROOM-2/Projects/Force_Based_Applications/media/3.jpg" style="width: 50%;" alt="Image 1">
+    <img src="https://raw.githubusercontent.com/surgosan/ESP32_Projects/main/ESP32-S3-WROOM-2/Projects/Force_Based_Applications/media/4.jpg" style="width: 50%;" alt="Image 2">
 </div>
 
 *Force based application utilizing an external power supply and transistor*
