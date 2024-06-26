@@ -9,7 +9,7 @@ PWM, and the Arduino IDE.
 
 This setup can be applied to robotics and anything that would need to move along 2d plane. 
 
-![Overview](media/IMG_3474.jpg)
+![Overview][1]
 
 # Modules
 
@@ -20,8 +20,8 @@ This setup can be applied to robotics and anything that would need to move along
 - 2x DC Motors
 
 <div style="display: flex;">
-    <img src="media/IMG_3476.jpg" style="width: 50%;" alt="Image 1">
-    <img src="media/IMG_3475.jpg" style="width: 50%;" alt="Image 2">
+    <img src="https://raw.githubusercontent.com/surgosan/ESP32_Projects/main/ESP32-S3-WROOM-2/Projects/DC_Motors_Rotary_and_Joystick/media/IMG_3476.jpg" style="width: 50%;" alt="Image 1">
+    <img src="https://raw.githubusercontent.com/surgosan/ESP32_Projects/main/ESP32-S3-WROOM-2/Projects/DC_Motors_Rotary_and_Joystick/media/IMG_3475.jpg" style="width: 50%;" alt="Image 2">
 </div>
 
 ## ESP32-S3-WROOM-2
@@ -36,8 +36,8 @@ The L293D received power from the power supply in order to power the DC motors. 
 power from the ESP32 in the form of PWM. Thus, it is also connected the ESP32s GND line.
 
 <div style="display: flex;">
-    <img src="media/IMG_3477.jpg" style="width: 50%;" alt="Image 1">
-    <img src="media/IMG_3478.jpg" style="width: 50%;" alt="Image 2">
+    <img src="https://raw.githubusercontent.com/surgosan/ESP32_Projects/main/ESP32-S3-WROOM-2/Projects/DC_Motors_Rotary_and_Joystick/media/IMG_3477.jpg" style="width: 50%;" alt="Image 1">
+    <img src="https://raw.githubusercontent.com/surgosan/ESP32_Projects/main/ESP32-S3-WROOM-2/Projects/DC_Motors_Rotary_and_Joystick/media/IMG_3478.jpg" style="width: 50%;" alt="Image 2">
 </div>
 
 ## Schematic
@@ -46,4 +46,8 @@ The L293D received power from both the ESP32 and the power supply. Thus, it was 
 of their ground lines. The DC Motors received power from the power supply via the L293D. The
 ESP32 received power from a usb cable connected to a PC.
 
-![Schematic](media/Schematic.png)
+![Schematic][2]
+
+
+[1]: media/IMG_3474.jpg
+[2]: media/Schematic.png
