@@ -72,6 +72,16 @@ void setup() {
   Serial.println("HTTP server started");
   Serial.print("IP Address: ");
   Serial.println(WiFi.localIP());
+
+  if (getLocalTime(&timeinfo)) {
+    int currentHour = timeinfo.tm_hour;
+
+    if (currentHour > 6 && currentHour < 23) { // If day
+      fountainStatus = true;
+      fountainStatusString = "OFF - Turned ON Automatically";
+      server.send(200, "text/plain", fountainStatusString);\
+    }
+  }
 }
 
 void loop() {
