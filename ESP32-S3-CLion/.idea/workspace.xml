@@ -6,6 +6,9 @@
   <component name="CMakePresetLoader">{
   &quot;useNewFormat&quot;: true
 }</component>
+  <component name="CMakeProjectFlavorService">
+    <option name="flavorId" value="CMakePlainProjectFlavor" />
+  </component>
   <component name="CMakeReloadState">
     <option name="reloaded" value="true" />
   </component>
@@ -132,14 +135,17 @@
       <configuration PROFILE_NAME="idf" ENABLED="true" GENERATION_DIR="build" CONFIG_NAME="Debug" TOOLCHAIN_NAME="EspIdfAutoGenff34e7b3">
         <ADDITIONAL_GENERATION_ENVIRONMENT>
           <envs>
+            <env name="IDF_PATH" value="C:\Espressif\frameworks\esp-idf-v5.2.1" />
             <env name="IDF_TARGET" value="esp32s3" />
+            <env name="ESPPORT" value="COM3" />
+            <env name="ESPBAUD" value="115200" />
           </envs>
         </ADDITIONAL_GENERATION_ENVIRONMENT>
       </configuration>
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef0279b1-0681-4159-a665-9d79ed38e1ed" name="Changes" comment="Updated Gitignore for idf files">
+    <list default="true" id="ef0279b1-0681-4159-a665-9d79ed38e1ed" name="Changes" comment="Working on ESPNOW">
       <change afterPath="$PROJECT_DIR$/../../../../../Espressif/frameworks/esp-idf-v5.2.1/workspace/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../../../../Espressif/frameworks/esp-idf-v5.2.1/workspace/Testing/.cproject" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../../../../Espressif/frameworks/esp-idf-v5.2.1/workspace/Testing/.project" afterDir="false" />
@@ -158,17 +164,9 @@
       <change afterPath="$PROJECT_DIR$/../../../../../Espressif/frameworks/esp-idf-v5.2.1/workspace/test/main/CMakeLists.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../../../../Espressif/frameworks/esp-idf-v5.2.1/workspace/test/main/Kconfig.projbuild" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../../../../Espressif/frameworks/esp-idf-v5.2.1/workspace/test/main/main.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ESPNOW/ESPNOW_Master.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ESPNOW/ESPNOW_Master.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ESPNOW/ESPNOW_Slave.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ESPNOW/ESPNOW_Slave.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ESPNOW/MacAdress.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ESPNOW/MacAdress.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Onboard_LED.c" beforeDir="false" afterPath="$PROJECT_DIR$/components/Onboard_LED.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/ESP32-S3-CLion.c" beforeDir="false" afterPath="$PROJECT_DIR$/main/ESP32-S3-CLion.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdkconfig" beforeDir="false" afterPath="$PROJECT_DIR$/sdkconfig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -216,24 +214,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
-    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/sergy/CLionProjects/ESP32_Projects/ESP32-S3-CLion/main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;CMakeSettings&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "CMake Application.Flash and Monitor.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Espressif/frameworks/esp-idf-v5.2.1/examples/get-started/hello_world",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "CMakeSettings",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\sergy\CLionProjects\ESP32_Projects\ESP32-S3-CLion\main" />
@@ -242,13 +241,18 @@
       <recent name="C:\Users\sergy\CLionProjects\ESP32_Projects\ESP32-S3-CLion\components" />
     </key>
   </component>
-  <component name="RunManager" selected="CMake Application.ESP32-S3-CLion.elf">
+  <component name="RunManager" selected="CMake Application.Flash and Monitor">
     <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="CLION.EXTERNAL.BUILD" enabled="true" />
       </method>
     </configuration>
     <configuration name="ESP32-S3-CLion.elf" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ESP32-S3-CLion" TARGET_NAME="ESP32-S3-CLion.elf" CONFIG_NAME="idf" RUN_TARGET_PROJECT_NAME="ESP32-S3-CLion" RUN_TARGET_NAME="ESP32-S3-CLion.elf">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Flash and Monitor" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="monitor -p COM4" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="true" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ESP32-S3-CLion" TARGET_NAME="flash" CONFIG_NAME="idf" RUN_PATH="$PROJECT_DIR$/../../../../../Espressif/tools/idf-exe/1.0.3/idf.py.exe">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -819,33 +823,8 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="CMake Application.bootloader" />
-      <item itemvalue="CMake Application.efuse-common-table" />
-      <item itemvalue="CMake Application.efuse-custom-table" />
-      <item itemvalue="CMake Application.efuse_test_table" />
-      <item itemvalue="CMake Application.show-efuse-table" />
-      <item itemvalue="CMake Application.memory_ld" />
-      <item itemvalue="CMake Application.app" />
-      <item itemvalue="CMake Application.app-flash" />
-      <item itemvalue="CMake Application.bootloader-flash" />
-      <item itemvalue="CMake Application.erase_flash" />
-      <item itemvalue="CMake Application.flash" />
-      <item itemvalue="CMake Application.gen_project_binary" />
-      <item itemvalue="CMake Application.monitor" />
-      <item itemvalue="CMake Application.partition-table-flash" />
-      <item itemvalue="CMake Application.uf2" />
-      <item itemvalue="CMake Application.uf2-app" />
-      <item itemvalue="CMake Application.custom_bundle" />
-      <item itemvalue="CMake Application.apidoc" />
-      <item itemvalue="CMake Application.everest" />
-      <item itemvalue="CMake Application.p256m" />
-      <item itemvalue="CMake Application.lib" />
-      <item itemvalue="CMake Application.mbedcrypto" />
-      <item itemvalue="CMake Application.mbedtls" />
-      <item itemvalue="CMake Application.mbedx509" />
-      <item itemvalue="CMake Application.partition-table" />
-      <item itemvalue="CMake Application.partition_table_bin" />
-      <item itemvalue="CMake Application.app_check_size" />
+      <item itemvalue="CMake Application.ESP32-S3-CLion.elf" />
+      <item itemvalue="CMake Application.Flash and Monitor" />
       <item itemvalue="CMake Application.__idf_app_trace" />
       <item itemvalue="CMake Application.__idf_app_update" />
       <item itemvalue="CMake Application.__idf_bootloader_support" />
@@ -912,27 +891,53 @@
       <item itemvalue="CMake Application.__idf_wifi_provisioning" />
       <item itemvalue="CMake Application.__idf_wpa_supplicant" />
       <item itemvalue="CMake Application.__idf_xtensa" />
-      <item itemvalue="CMake Application.dfu" />
-      <item itemvalue="CMake Application.dfu-flash" />
-      <item itemvalue="CMake Application.dfu-list" />
-      <item itemvalue="CMake Application.confserver" />
-      <item itemvalue="CMake Application.menuconfig" />
-      <item itemvalue="CMake Application.save-defconfig" />
       <item itemvalue="CMake Application.__ldgen_output_sections.ld" />
       <item itemvalue="CMake Application._project_elf_src" />
-      <item itemvalue="CMake Application.ESP32-S3-CLion.elf" />
-      <item itemvalue="CMake Application.size" />
-      <item itemvalue="CMake Application.size-components" />
-      <item itemvalue="CMake Application.size-files" />
+      <item itemvalue="CMake Application.apidoc" />
+      <item itemvalue="CMake Application.app-flash" />
+      <item itemvalue="CMake Application.app" />
+      <item itemvalue="CMake Application.app_check_size" />
+      <item itemvalue="CMake Application.bootloader-flash" />
+      <item itemvalue="CMake Application.bootloader" />
+      <item itemvalue="CMake Application.confserver" />
+      <item itemvalue="CMake Application.custom_bundle" />
+      <item itemvalue="CMake Application.dfu-flash" />
+      <item itemvalue="CMake Application.dfu-list" />
+      <item itemvalue="CMake Application.dfu" />
+      <item itemvalue="CMake Application.efuse-common-table" />
+      <item itemvalue="CMake Application.efuse-custom-table" />
       <item itemvalue="CMake Application.efuse_common_table" />
       <item itemvalue="CMake Application.efuse_custom_table" />
+      <item itemvalue="CMake Application.efuse_test_table" />
       <item itemvalue="CMake Application.encrypted-app-flash" />
       <item itemvalue="CMake Application.encrypted-bootloader-flash" />
       <item itemvalue="CMake Application.encrypted-flash" />
       <item itemvalue="CMake Application.encrypted-partition-table-flash" />
-      <item itemvalue="CMake Application.partition_table" />
+      <item itemvalue="CMake Application.erase_flash" />
+      <item itemvalue="CMake Application.everest" />
+      <item itemvalue="CMake Application.flash" />
+      <item itemvalue="CMake Application.gen_project_binary" />
+      <item itemvalue="CMake Application.lib" />
+      <item itemvalue="CMake Application.mbedcrypto" />
+      <item itemvalue="CMake Application.mbedtls" />
+      <item itemvalue="CMake Application.mbedx509" />
+      <item itemvalue="CMake Application.memory_ld" />
+      <item itemvalue="CMake Application.menuconfig" />
+      <item itemvalue="CMake Application.monitor" />
+      <item itemvalue="CMake Application.p256m" />
+      <item itemvalue="CMake Application.partition-table-flash" />
+      <item itemvalue="CMake Application.partition-table" />
       <item itemvalue="CMake Application.partition_table-flash" />
+      <item itemvalue="CMake Application.partition_table" />
+      <item itemvalue="CMake Application.partition_table_bin" />
+      <item itemvalue="CMake Application.save-defconfig" />
+      <item itemvalue="CMake Application.show-efuse-table" />
       <item itemvalue="CMake Application.show_efuse_table" />
+      <item itemvalue="CMake Application.size-components" />
+      <item itemvalue="CMake Application.size-files" />
+      <item itemvalue="CMake Application.size" />
+      <item itemvalue="CMake Application.uf2-app" />
+      <item itemvalue="CMake Application.uf2" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -944,7 +949,16 @@
       <option name="presentableId" value="Default" />
       <updated>1718952300486</updated>
       <workItem from="1718952302485" duration="639000" />
-      <workItem from="1719008425571" duration="4284000" />
+      <workItem from="1719008425571" duration="4330000" />
+      <workItem from="1723610361492" duration="109000" />
+      <workItem from="1725336566154" duration="510000" />
+      <workItem from="1725337179069" duration="258000" />
+      <workItem from="1725337493808" duration="8000" />
+      <workItem from="1725353740678" duration="118000" />
+      <workItem from="1725395782535" duration="91000" />
+      <workItem from="1725395897063" duration="441000" />
+      <workItem from="1725396346068" duration="32000" />
+      <workItem from="1725396433538" duration="1698000" />
     </task>
     <task id="LOCAL-00001" summary="Added CLion ESP IDF Support">
       <option name="closed" value="true" />
@@ -954,7 +968,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718952836109</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Working on ESPNOW">
+      <option name="closed" value="true" />
+      <created>1719014565022</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1719014565022</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -967,6 +989,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added CLion ESP IDF Support" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added CLion ESP IDF Support" />
+    <MESSAGE value="Working on ESPNOW" />
+    <option name="LAST_COMMIT_MESSAGE" value="Working on ESPNOW" />
   </component>
 </project>
