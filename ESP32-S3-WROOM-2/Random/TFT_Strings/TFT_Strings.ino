@@ -16,16 +16,7 @@ Adafruit_ILI9341 tft = Adafruit_ILI9341(TFT_CS, TFT_DC, TFT_MOSI, TFT_SCK, TFT_R
 
 // Array of strings to display
 const char* messages[] = {
-  "Hello, ESP32!",
-  "Welcome to Adafruit!",
-  "This is a TFT display.",
-  "Displaying text...",
-  "Graphics are fun!",
-  "ESP32 + TFT = Cool",
-  "Arduino programming",
-  "Enjoy your project!",
-  "Adafruit ILI9341",
-  "Thank you!"
+  "Hello Matthew. I forgor."
 };
 const int numMessages = sizeof(messages) / sizeof(messages[0]);
 
