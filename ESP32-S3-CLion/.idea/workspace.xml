@@ -145,7 +145,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef0279b1-0681-4159-a665-9d79ed38e1ed" name="Changes" comment="Working on ESPNOW">
+    <list default="true" id="ef0279b1-0681-4159-a665-9d79ed38e1ed" name="Changes" comment="Bare C blink">
       <change afterPath="$PROJECT_DIR$/../../../../../Espressif/frameworks/esp-idf-v5.2.1/workspace/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../../../../Espressif/frameworks/esp-idf-v5.2.1/workspace/Testing/.cproject" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../../../../Espressif/frameworks/esp-idf-v5.2.1/workspace/Testing/.project" afterDir="false" />
@@ -164,9 +164,10 @@
       <change afterPath="$PROJECT_DIR$/../../../../../Espressif/frameworks/esp-idf-v5.2.1/workspace/test/main/CMakeLists.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../../../../Espressif/frameworks/esp-idf-v5.2.1/workspace/test/main/Kconfig.projbuild" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../../../../Espressif/frameworks/esp-idf-v5.2.1/workspace/test/main/main.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Testing/Blink.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Testing/LedFade.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/ESP32-S3-CLion.c" beforeDir="false" afterPath="$PROJECT_DIR$/main/ESP32-S3-CLion.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdkconfig" beforeDir="false" afterPath="$PROJECT_DIR$/sdkconfig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,6 +176,7 @@
   </component>
   <component name="ChangesViewManager">
     <option name="groupingKeys">
+      <option value="directory" />
       <option value="repository" />
     </option>
   </component>
@@ -184,6 +186,7 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:idf" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -197,6 +200,9 @@
     &quot;accountId&quot;: &quot;ade4a553-c62b-42c4-917c-0dd1622da0ff&quot;
   }
 }</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/main/ESP32-S3-CLion.c" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="ProjectApplicationVersion">
     <option name="ide" value="CLion" />
     <option name="majorVersion" value="2024" />
@@ -242,11 +248,6 @@
     </key>
   </component>
   <component name="RunManager" selected="CMake Application.Flash and Monitor">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ESP32-S3-CLion.elf" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ESP32-S3-CLion" TARGET_NAME="ESP32-S3-CLion.elf" CONFIG_NAME="idf" RUN_TARGET_PROJECT_NAME="ESP32-S3-CLion" RUN_TARGET_NAME="ESP32-S3-CLion.elf">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -593,6 +594,11 @@
       </method>
     </configuration>
     <configuration name="_project_elf_src" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ESP32-S3-CLion" TARGET_NAME="_project_elf_src" CONFIG_NAME="idf">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -958,7 +964,8 @@
       <workItem from="1725395782535" duration="91000" />
       <workItem from="1725395897063" duration="441000" />
       <workItem from="1725396346068" duration="32000" />
-      <workItem from="1725396433538" duration="1698000" />
+      <workItem from="1725396433538" duration="3687000" />
+      <workItem from="1725400544771" duration="3346000" />
     </task>
     <task id="LOCAL-00001" summary="Added CLion ESP IDF Support">
       <option name="closed" value="true" />
@@ -976,7 +983,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719014565022</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Bare C blink">
+      <option name="closed" value="true" />
+      <created>1725398249026</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1725398249026</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -990,6 +1005,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added CLion ESP IDF Support" />
     <MESSAGE value="Working on ESPNOW" />
-    <option name="LAST_COMMIT_MESSAGE" value="Working on ESPNOW" />
+    <MESSAGE value="Bare C blink" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bare C blink" />
   </component>
 </project>
