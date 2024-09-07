@@ -12,7 +12,7 @@ void app_main(void) {
 
 
     while (true) {
-        printf("Turning LED On\n");
-        vTaskDelay(pdMS_TO_TICKS(1000));
+        printf("Hello from ESP32-C6!\n");
+        vTaskDelay(pdMS_TO_TICKS(2000));
     }
 }
