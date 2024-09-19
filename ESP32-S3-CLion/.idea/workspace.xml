@@ -19,6 +19,7 @@
       <config projectName="ESP32-S3-CLion" targetName="app_check_size" />
       <config projectName="ESP32-S3-CLion" targetName="__idf_mqtt" />
       <config projectName="ESP32-S3-CLion" targetName="__idf_esp_adc" />
+      <config projectName="ESP32-S3-CLion" targetName="__idf_perfmon" />
       <config projectName="ESP32-S3-CLion" targetName="__idf_protobuf-c" />
       <config projectName="ESP32-S3-CLion" targetName="efuse_custom_table" />
       <config projectName="ESP32-S3-CLion" targetName="encrypted-app-flash" />
@@ -40,16 +41,17 @@
       <config projectName="ESP32-S3-CLion" targetName="__idf_http_parser" />
       <config projectName="ESP32-S3-CLion" targetName="__idf_esp_mm" />
       <config projectName="ESP32-S3-CLion" targetName="__idf_esp_netif" />
+      <config projectName="ESP32-S3-CLion" targetName="dfu-flash" />
       <config projectName="ESP32-S3-CLion" targetName="__idf_pthread" />
       <config projectName="ESP32-S3-CLion" targetName="app-flash" />
       <config projectName="ESP32-S3-CLion" targetName="lib" />
-      <config projectName="ESP32-S3-CLion" targetName="__idf_riscv" />
       <config projectName="ESP32-S3-CLion" targetName="__idf_esp_hw_support" />
       <config projectName="ESP32-S3-CLion" targetName="efuse_test_table" />
       <config projectName="ESP32-S3-CLion" targetName="__idf_tcp_transport" />
       <config projectName="ESP32-S3-CLion" targetName="efuse-common-table" />
       <config projectName="ESP32-S3-CLion" targetName="__idf_fatfs" />
       <config projectName="ESP32-S3-CLion" targetName="menuconfig" />
+      <config projectName="ESP32-S3-CLion" targetName="dfu-list" />
       <config projectName="ESP32-S3-CLion" targetName="__idf_sdmmc" />
       <config projectName="ESP32-S3-CLion" targetName="__idf_esp_ringbuf" />
       <config projectName="ESP32-S3-CLion" targetName="__idf_esp_system" />
@@ -63,14 +65,17 @@
       <config projectName="ESP32-S3-CLion" targetName="erase_flash" />
       <config projectName="ESP32-S3-CLion" targetName="apidoc" />
       <config projectName="ESP32-S3-CLion" targetName="uf2" />
+      <config projectName="ESP32-S3-CLion" targetName="__idf_touch_element" />
       <config projectName="ESP32-S3-CLion" targetName="efuse-custom-table" />
       <config projectName="ESP32-S3-CLion" targetName="custom_bundle" />
       <config projectName="ESP32-S3-CLion" targetName="ESP32-S3-CLion.elf" />
       <config projectName="ESP32-S3-CLion" targetName="show-efuse-table" />
       <config projectName="ESP32-S3-CLion" targetName="partition_table-flash" />
+      <config projectName="ESP32-S3-CLion" targetName="__idf_xtensa" />
       <config projectName="ESP32-S3-CLion" targetName="bootloader-flash" />
       <config projectName="ESP32-S3-CLion" targetName="bootloader" />
       <config projectName="ESP32-S3-CLion" targetName="__idf_esp_event" />
+      <config projectName="ESP32-S3-CLion" targetName="dfu" />
       <config projectName="ESP32-S3-CLion" targetName="partition_table_bin" />
       <config projectName="ESP32-S3-CLion" targetName="__idf_driver" />
       <config projectName="ESP32-S3-CLion" targetName="__idf_wear_levelling" />
@@ -79,6 +84,7 @@
       <config projectName="ESP32-S3-CLion" targetName="__idf_esp_pm" />
       <config projectName="ESP32-S3-CLion" targetName="show_efuse_table" />
       <config projectName="ESP32-S3-CLion" targetName="app" />
+      <config projectName="ESP32-S3-CLion" targetName="__idf_usb" />
       <config projectName="ESP32-S3-CLion" targetName="__idf_esp_bootloader_format" />
       <config projectName="ESP32-S3-CLion" targetName="__idf_soc" />
       <config projectName="ESP32-S3-CLion" targetName="__idf_mbedtls" />
@@ -107,7 +113,6 @@
       <config projectName="ESP32-S3-CLion" targetName="__idf_wifi_provisioning" />
       <config projectName="ESP32-S3-CLion" targetName="__idf_esp_rom" />
       <config projectName="ESP32-S3-CLion" targetName="__idf_espcoredump" />
-      <config projectName="ESP32-S3-CLion" targetName="__idf_ieee802154" />
       <config projectName="ESP32-S3-CLion" targetName="uf2-app" />
       <config projectName="ESP32-S3-CLion" targetName="__idf_esp_https_ota" />
       <config projectName="ESP32-S3-CLion" targetName="__idf_freertos" />
@@ -131,16 +136,16 @@
         <ADDITIONAL_GENERATION_ENVIRONMENT>
           <envs>
             <env name="ESPBAUD" value="115200" />
-            <env name="ESPPORT" value="COM8" />
+            <env name="ESPPORT" value="COM10" />
             <env name="IDF_PATH" value="C:\Espressif\frameworks\esp-idf-v5.2.1" />
-            <env name="IDF_TARGET" value="esp32c6" />
+            <env name="IDF_TARGET" value="esp32s3" />
           </envs>
         </ADDITIONAL_GENERATION_ENVIRONMENT>
       </configuration>
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef0279b1-0681-4159-a665-9d79ed38e1ed" name="Changes" comment="XML">
+    <list default="true" id="ef0279b1-0681-4159-a665-9d79ed38e1ed" name="Changes" comment="ESP32 C6 Support">
       <change afterPath="$PROJECT_DIR$/../../../../../Espressif/frameworks/esp-idf-v5.2.1/workspace/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../../../../Espressif/frameworks/esp-idf-v5.2.1/workspace/Testing/.cproject" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../../../../Espressif/frameworks/esp-idf-v5.2.1/workspace/Testing/.project" afterDir="false" />
@@ -159,9 +164,10 @@
       <change afterPath="$PROJECT_DIR$/../../../../../Espressif/frameworks/esp-idf-v5.2.1/workspace/test/main/CMakeLists.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../../../../Espressif/frameworks/esp-idf-v5.2.1/workspace/test/main/Kconfig.projbuild" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../../../../Espressif/frameworks/esp-idf-v5.2.1/workspace/test/main/main.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Testing/TFT_Hello_World.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/ESP32-S3-CLion.c" beforeDir="false" afterPath="$PROJECT_DIR$/main/ESP32-S3-CLion.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdkconfig" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -214,25 +220,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;CMake Application.Flash and Monitor.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
-    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Espressif/frameworks/esp-idf-v5.2.1/examples/get-started/hello_world&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;CMakeSettings&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "CMake Application.Flash and Monitor.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Espressif/frameworks/esp-idf-v5.2.1/examples/get-started/hello_world",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "CMakeSettings",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\sergy\CLionProjects\ESP32_Projects\ESP32-S3-CLion\main" />
@@ -252,7 +258,7 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Flash and Monitor" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="monitor -p COM9" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="true" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ESP32-S3-CLion" TARGET_NAME="flash" CONFIG_NAME="idf" RUN_PATH="$PROJECT_DIR$/../../../../../Espressif/tools/idf-exe/1.0.3/idf.py.exe">
+    <configuration name="Flash and Monitor" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="monitor -p COM11" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="true" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ESP32-S3-CLion" TARGET_NAME="flash" CONFIG_NAME="idf" RUN_PATH="$PROJECT_DIR$/../../../../../Espressif/tools/idf-exe/1.0.3/idf.py.exe">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -457,11 +463,6 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="__idf_ieee802154" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ESP32-S3-CLion" TARGET_NAME="__idf_ieee802154" CONFIG_NAME="idf">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="__idf_json" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ESP32-S3-CLion" TARGET_NAME="__idf_json" CONFIG_NAME="idf">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -507,6 +508,11 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="__idf_perfmon" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ESP32-S3-CLion" TARGET_NAME="__idf_perfmon" CONFIG_NAME="idf">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="__idf_protobuf-c" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ESP32-S3-CLion" TARGET_NAME="__idf_protobuf-c" CONFIG_NAME="idf">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -518,11 +524,6 @@
       </method>
     </configuration>
     <configuration name="__idf_pthread" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ESP32-S3-CLion" TARGET_NAME="__idf_pthread" CONFIG_NAME="idf">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="__idf_riscv" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ESP32-S3-CLion" TARGET_NAME="__idf_riscv" CONFIG_NAME="idf">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -552,7 +553,17 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="__idf_touch_element" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ESP32-S3-CLion" TARGET_NAME="__idf_touch_element" CONFIG_NAME="idf">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="__idf_unity" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ESP32-S3-CLion" TARGET_NAME="__idf_unity" CONFIG_NAME="idf">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="__idf_usb" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ESP32-S3-CLion" TARGET_NAME="__idf_usb" CONFIG_NAME="idf">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -573,6 +584,11 @@
       </method>
     </configuration>
     <configuration name="__idf_wpa_supplicant" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ESP32-S3-CLion" TARGET_NAME="__idf_wpa_supplicant" CONFIG_NAME="idf">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="__idf_xtensa" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ESP32-S3-CLion" TARGET_NAME="__idf_xtensa" CONFIG_NAME="idf">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -623,6 +639,21 @@
       </method>
     </configuration>
     <configuration name="custom_bundle" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ESP32-S3-CLion" TARGET_NAME="custom_bundle" CONFIG_NAME="idf">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="dfu-flash" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ESP32-S3-CLion" TARGET_NAME="dfu-flash" CONFIG_NAME="idf">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="dfu-list" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ESP32-S3-CLion" TARGET_NAME="dfu-list" CONFIG_NAME="idf">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="dfu" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ESP32-S3-CLion" TARGET_NAME="dfu" CONFIG_NAME="idf">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -840,7 +871,6 @@
       <item itemvalue="CMake Application.__idf_hal" />
       <item itemvalue="CMake Application.__idf_heap" />
       <item itemvalue="CMake Application.__idf_http_parser" />
-      <item itemvalue="CMake Application.__idf_ieee802154" />
       <item itemvalue="CMake Application.__idf_json" />
       <item itemvalue="CMake Application.__idf_log" />
       <item itemvalue="CMake Application.__idf_lwip" />
@@ -850,20 +880,26 @@
       <item itemvalue="CMake Application.__idf_newlib" />
       <item itemvalue="CMake Application.__idf_nvs_flash" />
       <item itemvalue="CMake Application.__idf_nvs_sec_provider" />
+      <item itemvalue="CMake Application.__idf_perfmon" />
       <item itemvalue="CMake Application.__idf_protobuf-c" />
       <item itemvalue="CMake Application.__idf_protocomm" />
       <item itemvalue="CMake Application.__idf_pthread" />
-      <item itemvalue="CMake Application.__idf_riscv" />
       <item itemvalue="CMake Application.__idf_sdmmc" />
       <item itemvalue="CMake Application.__idf_soc" />
       <item itemvalue="CMake Application.__idf_spi_flash" />
       <item itemvalue="CMake Application.__idf_spiffs" />
       <item itemvalue="CMake Application.__idf_tcp_transport" />
+      <item itemvalue="CMake Application.__idf_touch_element" />
       <item itemvalue="CMake Application.__idf_unity" />
+      <item itemvalue="CMake Application.__idf_usb" />
       <item itemvalue="CMake Application.__idf_vfs" />
       <item itemvalue="CMake Application.__idf_wear_levelling" />
       <item itemvalue="CMake Application.__idf_wifi_provisioning" />
       <item itemvalue="CMake Application.__idf_wpa_supplicant" />
+      <item itemvalue="CMake Application.__idf_xtensa" />
+      <item itemvalue="CMake Application.dfu" />
+      <item itemvalue="CMake Application.dfu-flash" />
+      <item itemvalue="CMake Application.dfu-list" />
       <item itemvalue="CMake Application.__ldgen_output_sections.ld" />
       <item itemvalue="CMake Application._project_elf_src" />
       <item itemvalue="CMake Application.apidoc" />
@@ -931,7 +967,24 @@
       <workItem from="1725396433538" duration="3687000" />
       <workItem from="1725400544771" duration="5141000" />
       <workItem from="1725502377161" duration="33000" />
-      <workItem from="1725737281747" duration="1220000" />
+      <workItem from="1725737281747" duration="1795000" />
+      <workItem from="1725739339314" duration="15000" />
+      <workItem from="1725739442284" duration="15000" />
+      <workItem from="1725739534540" duration="27000" />
+      <workItem from="1725739654377" duration="24000" />
+      <workItem from="1725739864529" duration="20000" />
+      <workItem from="1725739956068" duration="54000" />
+      <workItem from="1725740046477" duration="18000" />
+      <workItem from="1725740274649" duration="39000" />
+      <workItem from="1725740333138" duration="5000" />
+      <workItem from="1725740691558" duration="15000" />
+      <workItem from="1725740849375" duration="89000" />
+      <workItem from="1725740982764" duration="3000" />
+      <workItem from="1725741258445" duration="6000" />
+      <workItem from="1725741389904" duration="29000" />
+      <workItem from="1725741533317" duration="8000" />
+      <workItem from="1725945598028" duration="465000" />
+      <workItem from="1726783528134" duration="2953000" />
     </task>
     <task id="LOCAL-00001" summary="Added CLion ESP IDF Support">
       <option name="closed" value="true" />
@@ -973,7 +1026,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725502400353</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="ESP32 C6 Support">
+      <option name="closed" value="true" />
+      <created>1725738743884</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1725738743884</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -990,6 +1051,7 @@
     <MESSAGE value="Bare C blink" />
     <MESSAGE value="Bare C PWM Fade" />
     <MESSAGE value="XML" />
-    <option name="LAST_COMMIT_MESSAGE" value="XML" />
+    <MESSAGE value="ESP32 C6 Support" />
+    <option name="LAST_COMMIT_MESSAGE" value="ESP32 C6 Support" />
   </component>
 </project>
