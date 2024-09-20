@@ -25,6 +25,5 @@
     <mapping directory="$PROJECT_DIR$/../../../../../Espressif/frameworks/esp-idf-v5.2.1/components/spiffs/spiffs" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../../../../../Espressif/frameworks/esp-idf-v5.2.1/components/unity/unity" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/components/TFT_eSPI" vcs="Git" />
   </component>
 </project>
