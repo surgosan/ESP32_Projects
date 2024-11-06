@@ -1,5 +1,7 @@
 # Automated Water Pump Version II
 
+![Top View][4]
+
 ## Project Details
 
 This project is an upgrade from the original water pump controller. The previous version was assembled over a 
@@ -16,7 +18,6 @@ next level to creating a dedicated unit to control the water pump.
 
 - ESP32-WROOM-2
 - Stacking Headers
-- 3D Printing Enclosure (From last version)
 - 7V Power Supply
 - Screw Terminal Block
 - Barrel Power Adapter
@@ -35,7 +36,7 @@ block connections
 On the PCB side, I started with the power jack and led it to the buck converter. This time, the buck converter was flipped 
 to accommodate the sides that the Vin and Out were on. This connected to the header risers which also has the MOSFET 
 connected. This MOSFET is powered directly from the power jack where the gate is connected to the ESP32 and leads to the 
-terminal block (also connected to GND). This completes the circuit.
+terminal block (also connected to GND). Thus, the circuit is complete.
 
 ![PCB View][1]
 
@@ -44,6 +45,8 @@ I wanted to place the buck converter under the ESP32, but it was too tall to fit
 that I have a custom buck converter which has a much smaller profile.
 
 ## Conclusion
+
+![Angle View][5]
 
 This project has now allowed me to implement my buck converter in a real application. I am sure there could be optimizations, 
 both in parts, and design. However, this is a good representation of where I am at the moment. Through this project, I have also 
@@ -54,7 +57,12 @@ The next step would be to create  my own fully custom PCB showcasing my buck con
 This way, instead of having a separate ESP32 unit to place on the headers, it would be integrated into the board. 
 I will also be upgrading the terminal block to be a connection that has a proper male and female port.
 
+![With ESP][6]
+
 [//]: # (MEDIA)
 [1]: Board%20Traces.png
 [2]: Cinematic%20View.png
 [3]: Schematic.png
+[4]: top_view.jpg
+[5]: angle_view.jpg
+[6]: with_esp.jpg
